@@ -9,3 +9,4 @@ SELECT COUNT(*) AS 'insegnanti', `office_address` as 'stesso_ufficio' FROM `teac
 SELECT AVG(vote) FROM `exam_student` WHERE `exam_id`
 
 /* 4. Contare quanti corsi di laurea ci sono per ogni dipartimento */
+SELECT COUNT(*) AS `numero_corsi`, `department_id` FROM `degrees` GROUP BY `department_id`
